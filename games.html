@@ -34,7 +34,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link px-3" href="documents\Ryzeson_Maravich_Resume.pdf" role="button">View CV</a>
+                <a class="nav-link px-3" href="content\documents\Ryzeson_Maravich_Resume.pdf" role="button">View CV</a>
             </li>
             <!-- <li class="nav-item"><a class="nav-link px-3" href="#">Accessibility</a></li> -->
         </ul>
@@ -42,81 +42,156 @@
 
     <!-- Games Section -->
     <section id="games">
-        <div class="container-fluid">
+        <div class="container">
             <h2 class="text-center mb-3 py-3">Games</h2>
+            <a class="anchor" id="web-games"></a>
+            <h2>Web</h2>
+            <div class="break"></div>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10 col-sm-4">
-                    <a class="anchor" id="web-games"></a>
-                    <h2>Web</h2>
-                    <div class="break"></div>
-                    <div class="d-flex"">
-                        <a href=" games\Traffic_Lights\index.html" target="_blank" class="game-column">
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="games\Traffic_Lights\index.html" target="_blank">
                         <div class="box traffic-lights">
                             <p class="game-name">Traffic Lights</p>
-                            <img width="320" height="320" src="images\thumbnails\traffic_lights_thumbnail.png"
+                            <img src="images\thumbnails\traffic_lights_thumbnail_1000x1000.png"
                                 alt="Screenshot of the game Traffic Lights">
                         </div>
-                        </a>
-                        <a href="games\Simon Game\index.html" class="game-column">
-                            <div class="box simon">
-                                <p class="game-name">Simon</p>
-                                <img width="320" height="320" src="images\thumbnails\simon_thumbnail.png"
-                                    alt="Screenshot of the game Simon">
-                            </div>
-                        </a>
-                        <a class="game-column">
-                            <div class="box coming-soon">
-                                <p class="game-name">Coming soon!</p>
-                                <img width="320" height="320" src="images\thumbnails\coming_soon_thumbnail.png"
-                                    alt="White question mark on a black background">
-                            </div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="games\Simon Game\index.html">
+                        <div class="box simon">
+                            <p class="game-name">Simon</p>
+                            <img src="images\thumbnails\simon_thumbnail_1000x1000.png"
+                                alt="Screenshot of the game Simon">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a>
+                        <div class="box coming-soon">
+                            <p class="game-name">Coming soon!</p>
+                            <img src="images\thumbnails\coming_soon_thumbnail_1000x1000.png"
+                                alt="White question mark on a black background">
+                        </div>
+                    </a>
+                </div>
             </div>
 
+            <a class="anchor" id="engine-games"></a>
+            <h2>Unity and Godot</h2>
+            <div class="break"></div>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10 col-sm-4">
-                    <a class="anchor" id="engine-games"></a>
-                    <h2>Unity and Godot</h2>
-                    <div class="break"></div>
-                    <div class="d-flex" style="height:25%;">
-                        <a href="https://nebby3.itch.io/grapplick" target="_blank" class="game-column">
-                            <div class="box grapplick">
-                                <p class="game-name">Grapplick</p>
-                                <img width="320" height="320" src="images\thumbnails\grapplick_thumbnail.png"
-                                    alt="Screenshot of the game Grapplick">
-                            </div>
-                        </a>
-                        <div class="d-flex flex-column game-column">
-                            <a href="http://cs.gettysburg.edu/~marary01/games/deepest_dungeon/Deepest_Dungeon.html"
-                                target="_blank">
-                                <div class="box deepest-dungeon">
-                                    <p class="game-name">Deepest Dungeon</p>
-                                    <img width="320" height="320" src="images\thumbnails\deepest_dungeon_thumbnail.png"
-                                        alt="Screenshot of the game Deepest Dungeon">
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="https://nebby3.itch.io/grapplick" target="_blank">
+                        <div class="box grapplick">
+                            <p class="game-name">Grapplick</p>
+                            <img src="images\thumbnails\grapplick_thumbnail_1000x734.png"
+                                alt="Screenshot of the game Grapplick">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="http://cs.gettysburg.edu/~marary01/games/deepest_dungeon/Deepest_Dungeon.html"
+                        target="_blank">
+                        <div class="box deepest-dungeon">
+                            <p class="game-name">Deepest Dungeon</p>
+                            <img src="images\thumbnails\deepest_dungeon_thumbnail_1000x1000.png"
+                                alt="Screenshot of the game Deepest Dungeon">
+                        </div>
+                    </a>
+                    <div class="d-flex game_actions justify-content-around">
+                        <a class="mr-3 mt-2" tabindex="0" data-toggle="modal" data-target="#deepest-dungeon-modal">How
+                            to play<i class="fas fa-caret-right ml-2"></i></a>
+                        <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
+                            data-html="true"
+                            data-content="Guidance on the development of this game was provided by Clif Presser.">Credits<i
+                                class="fas fa-caret-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="anchor" id="java-games"></a>
+            <h2>Java</h2>
+            <div class="break"></div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="games/Java_Games/BirdsofaFeather.jar"
+                        onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                        <div class="box birds-of-a-feather">
+                            <p class="game-name">Birds of a Feather</p>
+                            <img src="images\thumbnails\birds_of_a_feather_thumbnail_1000x1000.png"
+                                alt="Screenshot of the game Birds of a Feather">
+                        </div>
+                    </a>
+                    <div class="d-flex game_actions justify-content-around">
+                        <a class="mr-3 mt-2" tabindex="0" data-toggle="modal"
+                            data-target="#birds-of-a-feather-modal">How to play<i
+                                class="fas fa-caret-right ml-2"></i></a>
+                        <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
+                            data-html="true"
+                            data-content="This game was made in collaboration with Han Gong, with aid and specifications provided by Todd Neller.">Credits<i
+                                class="fas fa-caret-right ml-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="games/Java_Games/LightsOut.jar"
+                        onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                        <div class="box lights-out">
+                            <p class="game-name">Lights Out</p>
+                            <img src="images\thumbnails\lights_out_thumbnail_1000x1000.png"
+                                alt="Screenshot of the game Lights Out">
+                        </div>
+                    </a>
+                    <div class="d-flex game_actions justify-content-around">
+                        <a class="mr-3 mt-2" tabindex="0" data-toggle="modal" data-target="#lights-out-modal">How to
+                            play<i class="fas fa-caret-right ml-2"></i></a>
+                        <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
+                            data-html="true"
+                            data-content="This game was made in collaboration with Han Gong, with aid and specifications provided by Todd Neller.">Credits<i
+                                class="fas fa-caret-right ml-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="games/Java_Games/WhackACrab.jar"
+                                onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                                <div class="box whack-a-crab">
+                                    <p class="game-name">Whack-a-Crab</p>
+                                    <img src="images\thumbnails\whack_a_crab_thumbnail_1000x1000.png"
+                                        alt="Screenshot of the game Whack-a-Crab">
                                 </div>
                             </a>
                             <div class="d-flex game_actions justify-content-around">
                                 <a class="mr-3 mt-2" tabindex="0" data-toggle="modal"
-                                    data-target="#deepest-dungeon-modal">How to play<i
+                                    data-target="#whack-a-crab-modal">How to play<i
                                         class="fas fa-caret-right ml-2"></i></a>
                                 <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover"
                                     data-trigger="focus" data-html="true"
-                                    data-content="Guidance on the development of this game was provided by Clif Presser.">Credits<i
+                                    data-content="Aid and specifications for this game were provided by Sunny Kim.">Credits<i
                                         class="fas fa-caret-right ml-2"></i></a>
                             </div>
-                        </div>
-
-                    </div>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <a href="games/Java_Games/Chomp.jar"
+                                onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                                <div class="box chomp">
+                                    <p class="game-name">Chomp</p>
+                                    <img src="images\thumbnails\chomp_thumbnail_1000x1000.png" alt="Screenshot of the game Chomp">
+                                </div>
+                            </a>
+                            <div class="d-flex game_actions justify-content-around">
+                                <a class="mr-3 mt-2" tabindex="0" data-toggle="modal" data-target="#chomp-modal">How to
+                                    play<i class="fas fa-caret-right ml-2"></i></a>
+                                <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover"
+                                    data-trigger="focus" data-html="true"
+                                    data-content="Aid and specifications for this game were provided by Todd Neller.">Credits<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                            </div>
+                </div>
             </div>
 
-            <div class="row">
+
+
+            <!-- <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10 col-sm-4">
                     <a class="anchor" id="java-games"></a>
@@ -128,8 +203,7 @@
                                 onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
                                 <div class="box birds-of-a-feather">
                                     <p class="game-name">Birds of a Feather</p>
-                                    <img width="320" height="320"
-                                        src="images\thumbnails\birds_of_a_feather_thumbnail.png"
+                                    <img src="images\thumbnails\birds_of_a_feather_thumbnail.png"
                                         alt="Screenshot of the game Birds of a Feather">
                                 </div>
                             </a>
@@ -148,7 +222,7 @@
                                 onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
                                 <div class="box lights-out">
                                     <p class="game-name">Lights Out</p>
-                                    <img width="320" height="320" src="images\thumbnails\lights_out_thumbnail.png"
+                                    <img src="images\thumbnails\lights_out_thumbnail.png"
                                         alt="Screenshot of the game Lights Out">
                                 </div>
                             </a>
@@ -167,7 +241,7 @@
                                 onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
                                 <div class="box whack-a-crab">
                                     <p class="game-name">Whack-a-Crab</p>
-                                    <img width="320" height="320" src="images\thumbnails\whack_a_crab_thumbnail.png"
+                                    <img src="images\thumbnails\whack_a_crab_thumbnail.png"
                                         alt="Screenshot of the game Whack-a-Crab">
                                 </div>
                             </a>
@@ -186,8 +260,7 @@
                                 onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
                                 <div class="box chomp">
                                     <p class="game-name">Chomp</p>
-                                    <img width="320" height="320" src="images\thumbnails\chomp_thumbnail.png"
-                                        alt="Screenshot of the game Chomp">
+                                    <img src="images\thumbnails\chomp_thumbnail.png" alt="Screenshot of the game Chomp">
                                 </div>
                             </a>
                             <div class="d-flex game_actions justify-content-around">
@@ -202,8 +275,7 @@
                     </div>
                 </div>
                 <div class="col-md-1"></div>
-            </div>
-        </div>
+            </div> -->
         </div>
     </section>
 
@@ -389,7 +461,8 @@
     </div>
 
     <div class="credits pb-1">
-        <p class="credits"><strong>*</strong>Layout and design of this page was inspired by the <a href="https://peterefrancis.com/canvas-games/">games</a> section of Peter
+        <p class="credits"><strong>*</strong>Layout and design of this page was inspired by the <a
+                href="https://peterefrancis.com/canvas-games/">games</a> section of Peter
             E. Francis's website.</p>
     </div>
 

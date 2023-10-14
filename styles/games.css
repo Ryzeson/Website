@@ -5,10 +5,10 @@
 .box {
     border: solid black 2px;
     border-radius: 5%;
-    height: 320px;
-    width: 320px;
+    /* height: 220px; */
+    /* width: 220px; */
+    /* position: relative; */ /*Needs to be relative, so .game-name's percentage can be based off of it */
     overflow:hidden;
-    position: relative; /* Needs to be relative, so .game-name's percentage can be based off of it */
     background-color: black;
 }
 
@@ -25,6 +25,12 @@
 .box img {
     width: 100%;
     transition: 0.5s all ease-in-out;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .box:hover img {
@@ -32,8 +38,10 @@
     opacity: .6;
 }
 
-.coming-soon {
-    background-color: black;
+.sample-div-image-fill {
+    background: url('simon_thumbnail.png') no-repeat; /* 50% 50% centers image in div */
+    width: 100%;
+    height: 100%;
 }
 
 .game-name {
@@ -84,3 +92,19 @@ div.break {
     margin-right: 0px;
 }
 
+ /* Custom styles for square images */
+ .square {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* This creates a square aspect ratio (1:1) */
+    overflow: hidden;
+}
+
+.square img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire square */
+}

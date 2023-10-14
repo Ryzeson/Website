@@ -3,9 +3,8 @@
 }
 
 section .row {
-    height: 550px;
     padding-bottom: 4%;
-    /* height: auto; */
+    height: auto;
 }
 
 #highlights .row {
@@ -43,7 +42,7 @@ section .row {
 /* Moves nav bar elements to the right */
 .navbar-nav {
     margin-left: auto;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 .navbar-nav li:hover .dropdown-menu {
