@@ -1,0 +1,86 @@
+#games {
+    background-color: #E9ECEF;
+}
+
+.box {
+    border: solid black 2px;
+    border-radius: 5%;
+    height: 320px;
+    width: 320px;
+    overflow:hidden;
+    position: relative; /* Needs to be relative, so .game-name's percentage can be based off of it */
+    background-color: black;
+}
+
+.game-column {
+    margin-right: 10%;
+}
+
+.box:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* https://www.geeksforgeeks.org/how-to-zoom-an-image-on-mouse-hover-using-css/ */
+.box img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.box:hover img {
+    transform: scale(1.25);
+    opacity: .6;
+}
+
+.coming-soon {
+    background-color: black;
+}
+
+.game-name {
+    font-size: 2.4em; 
+    font-weight: bold;
+    color: white; 
+    text-shadow: -1px 1px 0 black,
+                          1px 1px 0 black,
+                         1px -1px 0 black,
+                        -1px -1px 0 black;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    z-index: 1; /* Otherwise, the opacity change in image affects this */
+    visibility: hidden;
+    opacity: 0;
+    /* https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property */
+    transition: visibility 0s, opacity .6s linear;
+}
+
+.game_actions a {
+    font-size: 1.4em;
+    color: black;
+    /* text-decoration: underline; */
+}
+
+.game_actions a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.popover{
+    font-size: 1.2em;
+}
+
+/* body.modal-open {
+    width: 100% !important;
+    padding-right: 0 !important;
+    overflow-y: scroll !important;
+} */
+
+/* Override */
+div.break {
+    justify-content: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+

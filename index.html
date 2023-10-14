@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryzeson's Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-dark justify-content-between sticky-top">
+        <div class="d-flex align-items-center" style="min-height: 60px;">
+            <a href="index.html">
+                <img src="images/grapes.jpg" width="40" height="40" class="rounded-circle" alt="Website logo">
+            </a>
+            <a href="#" class="navbar-brand pl-2">Home</a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link px-3" href="games.html" role="button" aria-haspopup="true">Games</a>
+                <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="games.html#web-games">Web Games</a>
+                    <a class="dropdown-item" href="games.html#engine-games">Unity / Godot Games</a>
+                    <a class="dropdown-item" href="games.html#java-games">Java Games</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link px-3" href="documents\Ryzeson_Maravich_Resume.pdf" role="button">View CV</a>
+            </li>
+            <!-- <li class="nav-item"><a class="nav-link px-3" href="#">Accessibility</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section id="intro">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3 text-dark">Ryzeson Maravich</h1>
+                <p class="lead text-dark">Software Developer</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <img src="images/Ryzeson_Headshot.jpg" alt="Profile Image" class="rounded"
+                        style="width: 330px; height: 500px; margin: auto; box-shadow: -8px 8px 4px rgba(0, 0, 0, 0.2);">
+                </div>
+                <div class="col-md-5">
+                    <h2>Hello!</h2>
+                    <p>I am a software develoepr and Gettysburg College graduate with a B.A. in Computer Science.
+                        My degree, internships, and many side projects have given me fluency in Java and SQL, as well as
+                        experience with Python, C#, HTML/CSS, and JavaScript.
+                        I currently work as a Solution Analyst, where I use my strong programming skills to validate
+                        complex data transformations, BI reports, and web service APIs.
+                        I love applying my skillset to a variety of challenging problems and utilizing my critical
+                        thinking skills to develop a solution.
+                        Please take a look around and feel free to reach out!
+                    </p>
+                    <div class="pb-0" style="position : absolute;bottom   : 0;">
+                        <a href="https://www.credly.com/badges/eaacdb93-c5cf-42a9-9b72-161761e3b48b/public_url"
+                            target="_blank">
+                            <img src="images/aws-certified-developer-associate.png" alt="AWS Certified Developer - Associate badge">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Highlights -->
+    <section id="highlights" class="bg-light py-4">
+        <div class="container">
+            <h2 class="text-center pb-3">Project Highlights</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images\thumbnails\grapplick_thumbnail.png" alt="Screenshot of the game Grapplick" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Grapplick</h5>
+                            <p class="card-text">A fun platformer that I made in Unity with some friends as a submission
+                                to my first ever Game Jam!</p>
+                            <a href="https://nebby3.itch.io/grapplick" target="_blank" class="btn btn-primary">Play
+                                Now!</a>
+                        </div>
+                        <div class="py-2 card-bottom d-flex justify-content-center align-items-center">
+                            <i class="fab fa-lg fa-unity"></i>
+                            <img src="images\icons\c_sharp_icon.svg" alt="C# icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images\thumbnails\affordable_thumbnail.png" alt="A heart surrounded by logos of various AWS services" class="card-img-top"
+                            style="margin: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title">AffordoMate</h5>
+                            <p class="card-text">A tool that helps automatically apply for financial healthcare aid by
+                                creating flexible and reusable scripts.
+                                Developed in conjunction with members of AFFORDABLE, as part of my senior capstone
+                                project.</p>
+                            <a href="https://blog.affordhealth.org/2022/01/06/gettysburg-student-build-automation-tool-to-autocomplete-health-aid-applications/"
+                                target="_blank" class="btn btn-primary">Read More!</a>
+                        </div>
+                        <div class="py-2 card-bottom d-flex justify-content-center align-items-center">
+                            <i class="fab fa-lg fa-aws"></i>
+                            <i class="fab fa-lg fa-js-square ml-2"></i>
+                            <i class="fab fa-lg fa-python ml-2"></i>
+                            <img src="images\icons\selenium_icon.png" alt="Selenium icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images\thumbnails\qb_classifier_thumbnail.png" alt="Screenshot of the Quiz Bowl Question Classifier web application" class="card-img-top" style="margin: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title">Quiz Bowl Question Classifier</h5>
+                            <p class="card-text">A web application that lets you experiment with two NLP-based machine
+                                learning models that I created to
+                                classify Quiz Bowl Questions (and any other trivia!) by subject.
+                            </p>
+                            <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"
+                                data-trigger="focus" data-html="true"
+                                data-content="Hosting this on Elastic Beanstalk became expensive, so I am currently looking for a different option... 
+                                Please feel free to check out the <a href='https://github.com/Ryzeson/QB_Classifier' target='_blank'>source code</a> and run it locally in the meantime!">Try
+                                it out!
+                            </a>
+                            <a tabindex="0" class="btn btn-code" href='https://github.com/Ryzeson/QB_Classifier'
+                                target="_blank" role="button">
+                                See the code!
+                            </a>
+                        </div>
+                        <div class="py-1 card-bottom d-flex justify-content-center align-items-center">
+                            <i class="fab fa-lg fa-python"></i>
+                            <img src="images\icons\flask_icon.png" alt="Flask icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container-fluid">
+            <h2 class="text-center mb-3 py-3">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mx-4 d-flex flex-column">
+                    <h3>Projects</h3>
+                    <div class="d-flex justify-content-between">
+                        <h4>AffordoMate</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fab fa-lg fa-aws"></i>
+                            <i class="fab fa-lg fa-js-square ml-2"></i>
+                            <i class="fab fa-lg fa-python ml-2"></i>
+                            <img src="images\icons\sqlite_icon.png" alt="SQLite icon" style="height: 1em;" class="fab fa-lg ml-2">
+                            <img src="images\icons\selenium_icon.png" alt="Selenium icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                    <p>A tool that helps automatically apply for financial healthcare aid by
+                        creating flexible and reusable scripts.
+                        Developed in conjunction with members of AFFORDABLE, as part of my senior capstone
+                        project.</p>
+                        <div class="d-flex proj_actions  mt-2">
+                            <a class="mr-2" href="https://blog.affordhealth.org/2022/01/06/gettysburg-student-build-automation-tool-to-autocomplete-health-aid-applications/" target="_blank">Read more</a>
+                            <p class="mr-2">|</p>
+                            <a class="mr-2" href="https://www.youtube.com/watch?v=6_-sGHOoz6k" target="_blank">Demo</a>
+                            <p class="mr-2">|</p>
+                            <a class="mr-2" href="https://blog.affordhealth.org/" target="_blank">Affordable site</a>
+                        </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <h4>Gin Rummy</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fab fa-lg fa-java"></i>
+                            <i class="fab fa-lg fa-python ml-2"></i>
+                        </div>
+                    </div>
+                    <p>Collaborated with Professor Todd Neller and student colleagues to design and program an optimal
+                        AI player for the card game Gin Rummy in Java.
+                        Our entry placed second in the Gin Rummy EAAI Undergraduate Research Challenge.
+                        We then presented and published an empirical detailing our experimentation
+                        process and results at the AAAI-21 Conference.</p>
+                        <div class="d-flex proj_actions mt-2">
+                            <a class="mr-2" href="games/Java_Games/PlayGinRummy.jar" onclick="return confirm('Clicking OK will begin the download of a JAR file. which will let you play a terminal-based game of Gin Rummy against our AI player.')" target="_blank">Play AI bot</a>
+                            <p class="mr-2">|</p>
+                            <a class="mr-2" href="https://ojs.aaai.org/index.php/AAAI/article/view/17837" target="_blank">Research article</a>
+                        </div>
+                </div>
+                
+                <div class="col-md-5 d-flex flex-column">
+                    <h3 class="invisible">Hidden</h3>
+                    <div class="d-flex justify-content-between">
+                        <h4>Quiz Bowl Classifier</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fab fa-lg fa-python ml-2"></i>
+                            <img src="images\icons\flask_icon.png" alt="Flask icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                    <p>A web application that lets you experiment with two NLP-based machine
+                        learning models that I created to
+                        classify Quiz Bowl Questions (and any other trivia!) by subject.</p>
+                        <div class="d-flex proj_actions mt-2">
+                            <a tabindex="0" class="mr-2" role="button" data-toggle="popover"
+                            data-trigger="focus" data-html="true"
+                            data-content="Hosting this on Elastic Beanstalk became expensive, so I am currently looking for a different option... 
+                            Please feel free to check out the <a href='https://github.com/Ryzeson/QB_Classifier' target='_blank'>source code</a> and run it locally in the meantime!">Visit site
+                        </a>
+                            <p class="mr-2">|</p>
+                            <a class="mr-2" href="https://github.com/Ryzeson/QB_Classifier" target="_blank">GitHub</a>
+                        </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <h4>HousingNet</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fab fa-lg fa-html5 ml-2"></i>
+                            <i class="fab fa-lg fa-css3 ml-2"></i>
+                            <i class="fab fa-lg fa-php ml-2"></i>
+                            <img src="images\icons\mysql_icon.png" alt="MySQL icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                    <p>Mock website where users can view, search, and request changes to their student-housing
+                        information, developed as part of my databases class.</p>
+                        <div class="d-flex proj_actions mt-2">
+                            <a class="mr-2" href="https://github.com/Ryzeson/HousingNet" target="_blank">GitHub</a>
+                        </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="break"></div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mx-4 d-flex flex-column">
+                    <h3>Games</h3>
+                    <div class="d-flex justify-content-between">
+                        <h4>Grapplick</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fab fa-lg fa-unity"></i>
+                            <img src="images\icons\c_sharp_icon.svg" alt="C# icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                    <p>A fun platformer that I made in Unity with some friends as a submission
+                        to my first ever Game Jam!</p>
+                        <div class="d-flex proj_actions mt-2">
+                            <a class="mr-2" href="https://nebby3.itch.io/grapplick" target="_blank">Play game</a>
+                            <p class="mr-2">|</p>
+                            <a class="mr-2" href="https://itch.io/jam/chill-jam-mike" target="_blank">Game Jam Home</a>
+                        </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <h4>Java Games</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fab fa-lg fa-java ml-2"></i>
+                        </div>
+                    </div>
+                    <p>Java FX games developed as part of Gettysburg College's CS112 and CS216 classes.</p>
+                    <div class="d-flex proj_actions mt-2">
+                        <a class="mr-2" href="games.html#java-games" target="_blank">Browse games</a>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column">
+                    <h3 class="invisible">Hidden</h3>
+                    <div class="d-flex justify-content-between">
+                        <h4>Web Games</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fab fa-lg fa-html5 ml-2"></i>
+                            <i class="fab fa-lg fa-css3 ml-2"></i>
+                            <i class="fab fa-lg fa-js-square ml-2"></i>
+                        </div>
+                    </div>
+                    <p>Various web games that were developed to help me learn JavaScript.</p>
+                    <div class="d-flex proj_actions mt-2">
+                        <a class="mr-2" href="games.html#web-games" target="_blank">Browse games</a>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <h4>Deepest Dungeon</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img src="images\icons\godot_icon.png" alt="Godot icon" style="height: 1em;" class="fab fa-lg ml-2">
+                        </div>
+                    </div>
+                    <p>A procedurally-generated, top-down, dungeon-crawler game made using Godot</p>
+                    <div class="d-flex proj_actions mt-2">
+                        <a class="mr-2" href="http://cs.gettysburg.edu/~marary01/games/deepest_dungeon/Deepest_Dungeon.html" target="_blank">Play game</a>
+                        <p class="mr-2">|</p>
+                        <a class="mr-2" tabindex="0" data-toggle="modal"
+                        data-target="#deepest-dungeon-modal">How to play</a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <!-- <div class="break"></div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mx-4 d-flex flex-column">
+                    <h3>Writings</h3>
+                        <h4>Knocking in the Game of Gin Rummy</h4>
+                            <p></p>
+                        <h4>Theory of Computation</h4>
+                                <p></p>
+                </div>
+                <div class="col-md-5 d-flex flex-column">
+                    <h3 class="invisible">Hidden</h3>
+                        <h4>Combinatorics</h4>
+                        <p></p>
+                        <h4>Linear Algebra</h4>
+                        <p></p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="break"></div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mx-4 d-flex flex-column">
+                    <h3>Non-Tech</h3>
+                        <h4>Nesciebam</h4>
+                            <p></p>
+                        <h4>MathBot</h4>
+                                <p></p>
+                </div>
+                <div class="col-md-5 d-flex flex-column">
+                    <h3 class="invisible">Hidden</h3>
+                        <h4>QuizBowl</h4>
+                        <p></p>
+                </div>
+                <div class="col-md-1"></div>
+            </div> -->
+
+
+        </div>
+    </section>
+
+    <!-- Deepest Dungeon -->
+    <div class="modal fade" id="deepest-dungeon-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong>Rules:</strong><br>
+                    The object of the game is to collect all of the flags in each level, and then make it back to the
+                    portal to advance to the next level before time runs out.
+                    Colliding with enemies will subtract time. The levels get tougher the deeper you go...
+                    <br><br>
+                    <strong>Controls:</strong><br>
+                    Use the arrow keys to move the player.
+                    <br>
+                    Once the compass is collected, hold "o" to zoom out. (You can't move while zoomed out.)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Homemade Footer Bootstrap -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 d-flex flex-column">
+                    <div class="d-flex m-auto my-2 align-items-center">
+                        <img src="images/grapes.jpg" alt="Website logo" class="mr-3 rounded-circle" style="width:40px;">
+                        <h5>Ryzeson Maravich</h5>
+                    </div>
+                    <div class="mt-2">
+                        <h6 id="copy-right">&copy; 2023 Ryzeson Maravich</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex justify-content-between align-items-center">
+                    <a href="https://www.linkedin.com/in/ryzeson-maravich/" target="_blank" class="text-white"><i
+                            class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/Ryzeson" target="_blank" class="text-white"><i
+                            class="fab fa-github fa-lg"></i></a>
+                    <!-- <a href="" target="_blank" class="text-white mr-3"><i -->
+                    <!-- class="fab fa-twitter fa-lg"></i></a> -->
+                    <a href="https://www.instagram.com/ryzeson/" target="_blank" class="text-white"><i
+                            class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.goodreads.com/user/show/164978679-ryzeson" target="_blank"
+                        class="text-white"><i class="fab fa-goodreads fa-lg"></i></a>
+                    <a href="https://en.wikipedia.org/wiki/User:Ryzcheese" target="_blank" class="text-white"><i
+                            class="fab fa-wikipedia-w fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- JQuery, Popper.js (used for tooltips / popovers), Bootstrap, and custom JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

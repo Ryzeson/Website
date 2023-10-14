@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryzeson's Website - Games</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/games.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-dark justify-content-between sticky-top">
+        <div class="d-flex align-items-center" style="min-height: 60px;">
+            <a href="index.html">
+                <img src="images/grapes.jpg" width="40" height="40" class="rounded-circle" alt="Website logo">
+            </a>
+            <!-- <a href="#" class="navbar-brand pl-2">Home</a> -->
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link px-3" href="games.html" role="button" aria-haspopup="true">Games</a>
+                <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="games.html#web-games">Web Games</a>
+                    <a class="dropdown-item" href="games.html#engine-games">Unity / Godot Games</a>
+                    <a class="dropdown-item" href="games.html#java-games">Java Games</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link px-3" href="documents\Ryzeson_Maravich_Resume.pdf" role="button">View CV</a>
+            </li>
+            <!-- <li class="nav-item"><a class="nav-link px-3" href="#">Accessibility</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Games Section -->
+    <section id="games">
+        <div class="container-fluid">
+            <h2 class="text-center mb-3 py-3">Games</h2>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 col-sm-4">
+                    <a class="anchor" id="web-games"></a>
+                    <h2>Web</h2>
+                    <div class="break"></div>
+                    <div class="d-flex"">
+                        <a href=" games\Traffic_Lights\index.html" target="_blank" class="game-column">
+                        <div class="box traffic-lights">
+                            <p class="game-name">Traffic Lights</p>
+                            <img width="320" height="320" src="images\thumbnails\traffic_lights_thumbnail.png"
+                                alt="Screenshot of the game Traffic Lights">
+                        </div>
+                        </a>
+                        <a href="games\Simon Game\index.html" class="game-column">
+                            <div class="box simon">
+                                <p class="game-name">Simon</p>
+                                <img width="320" height="320" src="images\thumbnails\simon_thumbnail.png"
+                                    alt="Screenshot of the game Simon">
+                            </div>
+                        </a>
+                        <a class="game-column">
+                            <div class="box coming-soon">
+                                <p class="game-name">Coming soon!</p>
+                                <img width="320" height="320" src="images\thumbnails\coming_soon_thumbnail.png"
+                                    alt="White question mark on a black background">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 col-sm-4">
+                    <a class="anchor" id="engine-games"></a>
+                    <h2>Unity and Godot</h2>
+                    <div class="break"></div>
+                    <div class="d-flex" style="height:25%;">
+                        <a href="https://nebby3.itch.io/grapplick" target="_blank" class="game-column">
+                            <div class="box grapplick">
+                                <p class="game-name">Grapplick</p>
+                                <img width="320" height="320" src="images\thumbnails\grapplick_thumbnail.png"
+                                    alt="Screenshot of the game Grapplick">
+                            </div>
+                        </a>
+                        <div class="d-flex flex-column game-column">
+                            <a href="http://cs.gettysburg.edu/~marary01/games/deepest_dungeon/Deepest_Dungeon.html"
+                                target="_blank">
+                                <div class="box deepest-dungeon">
+                                    <p class="game-name">Deepest Dungeon</p>
+                                    <img width="320" height="320" src="images\thumbnails\deepest_dungeon_thumbnail.png"
+                                        alt="Screenshot of the game Deepest Dungeon">
+                                </div>
+                            </a>
+                            <div class="d-flex game_actions justify-content-around">
+                                <a class="mr-3 mt-2" tabindex="0" data-toggle="modal"
+                                    data-target="#deepest-dungeon-modal">How to play<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                                <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover"
+                                    data-trigger="focus" data-html="true"
+                                    data-content="Guidance on the development of this game was provided by Clif Presser.">Credits<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 col-sm-4">
+                    <a class="anchor" id="java-games"></a>
+                    <h2>Java</h2>
+                    <div class="break"></div>
+                    <div class="d-flex" style="height:25%;">
+                        <div class="d-flex flex-column game-column">
+                            <a href="games/Java_Games/BirdsofaFeather.jar"
+                                onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                                <div class="box birds-of-a-feather">
+                                    <p class="game-name">Birds of a Feather</p>
+                                    <img width="320" height="320"
+                                        src="images\thumbnails\birds_of_a_feather_thumbnail.png"
+                                        alt="Screenshot of the game Birds of a Feather">
+                                </div>
+                            </a>
+                            <div class="d-flex game_actions justify-content-around">
+                                <a class="mr-3 mt-2" tabindex="0" data-toggle="modal"
+                                    data-target="#birds-of-a-feather-modal">How to play<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                                <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover"
+                                    data-trigger="focus" data-html="true"
+                                    data-content="This game was made in collaboration with Han Gong, with aid and specifications provided by Todd Neller.">Credits<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column game-column">
+                            <a href="games/Java_Games/LightsOut.jar"
+                                onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                                <div class="box lights-out">
+                                    <p class="game-name">Lights Out</p>
+                                    <img width="320" height="320" src="images\thumbnails\lights_out_thumbnail.png"
+                                        alt="Screenshot of the game Lights Out">
+                                </div>
+                            </a>
+                            <div class="d-flex game_actions justify-content-around">
+                                <a class="mr-3 mt-2" tabindex="0" data-toggle="modal"
+                                    data-target="#lights-out-modal">How to play<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                                <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover"
+                                    data-trigger="focus" data-html="true"
+                                    data-content="This game was made in collaboration with Han Gong, with aid and specifications provided by Todd Neller.">Credits<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column game-column">
+                            <a href="games/Java_Games/WhackACrab.jar"
+                                onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                                <div class="box whack-a-crab">
+                                    <p class="game-name">Whack-a-Crab</p>
+                                    <img width="320" height="320" src="images\thumbnails\whack_a_crab_thumbnail.png"
+                                        alt="Screenshot of the game Whack-a-Crab">
+                                </div>
+                            </a>
+                            <div class="d-flex game_actions justify-content-around">
+                                <a class="mr-3 mt-2" tabindex="0" data-toggle="modal"
+                                    data-target="#whack-a-crab-modal">How to play<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                                <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover"
+                                    data-trigger="focus" data-html="true"
+                                    data-content="Aid and specifications for this game were provided by Sunny Kim.">Credits<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column game-column">
+                            <a href="games/Java_Games/Chomp.jar"
+                                onclick="return confirm('Click OK to proceed to download a JAR of this game.')">
+                                <div class="box chomp">
+                                    <p class="game-name">Chomp</p>
+                                    <img width="320" height="320" src="images\thumbnails\chomp_thumbnail.png"
+                                        alt="Screenshot of the game Chomp">
+                                </div>
+                            </a>
+                            <div class="d-flex game_actions justify-content-around">
+                                <a class="mr-3 mt-2" tabindex="0" data-toggle="modal" data-target="#chomp-modal">How to
+                                    play<i class="fas fa-caret-right ml-2"></i></a>
+                                <a class="mr-3 mt-2" tabindex="0" role="button" data-toggle="popover"
+                                    data-trigger="focus" data-html="true"
+                                    data-content="Aid and specifications for this game were provided by Todd Neller.">Credits<i
+                                        class="fas fa-caret-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Deepest Dungeon -->
+    <div class="modal fade" id="deepest-dungeon-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong>Rules:</strong><br>
+                    The object of the game is to collect all of the flags in each level, and then make it back to the
+                    portal to advance to the next level before time runs out.
+                    Colliding with enemies will subtract time.
+                    See how deep you can go!
+                    <br><br>
+                    <strong>Controls:</strong><br>
+                    Use the arrow keys to move the player.
+                    <br>
+                    Once the compass is collected, hold "o" to zoom out. (You can't move while zoomed out.)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birds of a Feather -->
+    <div class="modal fade" id="birds-of-a-feather-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong>Rules:</strong><br>
+                    Birds of a Feather is solitare card game created by Todd Neller.
+                    The <a href='http://cs.gettysburg.edu/ai-matters/index.php/Birds_of_a_Feather'
+                        target='_blank'>rules</a> are simple, and although some deals may be challenging, just remember
+                    that over 99% of them are solvable!
+                    <br><br>
+                    <strong>Controls:</strong><br>
+                    Click on a card and drag it onto the desired stack.
+                    <br>
+                    Press the 'u' key to undo a move.
+                    <br><br>
+                    <strong>Setup:</strong><br>
+                    You must have <a href="https://www.java.com/en/download/" target="_blank">Java</a> and <a
+                        href="https://openjfx.io/" target="_blank">JavaFX</a> downloaded on your machine.
+                    Run the following command in the same directory that BirdsofaFeather.jar was downloaded to launch
+                    the game.
+                    (Make sure to replace the module path in the below command with your machine's path to
+                    the \lib folder of the javafx-sdk)
+                    <br>
+                    <code>java --module-path "\path\to\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.web,javafx.swing -jar BirdsofaFeather.jar</code>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lights Out -->
+    <div class="modal fade" id="lights-out-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong>Rules:</strong><br>
+                    The game consists of an n by n grid of lights. When the game starts, a random number or a stored
+                    pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent
+                    lights. The goal of the puzzle is to switch all the lights off, preferably with as few button
+                    presses as possible.
+                    <sup><a href='https://en.wikipedia.org/wiki/Lights_Out_(game)' target='_blank'>1</a></sup>
+                    <br><br>
+                    <strong>Controls:</strong><br>
+                    Click on a cell to toggle it.
+                    <br><br>
+                    <strong>Setup:</strong><br>
+                    You must have <a href="https://www.java.com/en/download/" target="_blank">Java</a> and <a
+                        href="https://openjfx.io/" target="_blank">JavaFX</a> downloaded on your machine.
+                    Run the following command in the same directory that LightsOut.jar was downloaded to launch the
+                    game.
+                    (Make sure to replace the module path in the below command with your machine's path to
+                    the \lib folder of the javafx-sdk)
+                    <br>
+                    <code>java --module-path "\path\to\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.web,javafx.swing -jar LightsOut.jar</code>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Whack-a-Crab -->
+    <div class="modal fade" id="whack-a-crab-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong>Rules:</strong><br>
+                    The object of the game is to click as many crabs as you can in 15 seconds. Be carefuil not to miss,
+                    or else you will lose points!
+                    <br><br>
+                    <strong>Setup:</strong><br>
+                    You must have <a href="https://www.java.com/en/download/" target="_blank">Java</a> and <a
+                        href="https://openjfx.io/" target="_blank">JavaFX</a> downloaded on your machine.
+                    Run the following command in the same directory that WhackACrab.jar was downloaded to launch the
+                    game.
+                    (Make sure to replace the module path in the below command with your machine's path to
+                    the \lib folder of the javafx-sdk)
+                    <br>
+                    <code>java --module-path "\path\to\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.web,javafx.swing -jar WhackACrab.jar</code>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chomp -->
+    <div class="modal fade" id="chomp-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong>Rules:</strong><br>
+                    Chomp is a two-player strategy game played on a rectangular grid made up of smaller square cells,
+                    which can be thought of as the blocks of a chocolate bar. The players take it in turns to choose one
+                    block and "eat it" (remove from the board), together with those that are below it and to its right.
+                    The top left block is "poisoned" and the player who eats this loses.
+                    <sup><a href='https://en.wikipedia.org/wiki/Chomp' target='_blank'>1</a></sup>
+                    <br><br>
+                    <strong>Controls:</strong><br>
+                    Click on an empty square to begin the game. Click on any filled cell to 'chomp' it. When the game is
+                    over, click any empty square to start a new game.
+                    <br><br>
+                    <strong>Setup:</strong><br>
+                    You must have <a href="https://www.java.com/en/download/" target="_blank">Java</a> and <a
+                        href="https://openjfx.io/" target="_blank">JavaFX</a> downloaded on your machine.
+                    Run the following command in the same directory that Chomp.jar was downloaded to launch the game.
+                    (Make sure to replace the module path in the below command with your machine's path to
+                    the \lib folder of the javafx-sdk)
+                    <br>
+                    <code>java --module-path "\path\to\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.web,javafx.swing -jar Chomp.jar</code>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="credits pb-1">
+        <p class="credits"><strong>*</strong>Layout and design of this page was inspired by the <a href="https://peterefrancis.com/canvas-games/">games</a> section of Peter
+            E. Francis's website.</p>
+    </div>
+
+    <!-- Homemade Footer Bootstrap -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 d-flex flex-column">
+                    <div class="d-flex m-auto my-2 align-items-center">
+                        <img src="images/grapes.jpg" alt="Website logo" class="mr-3 rounded-circle" style="width:40px;">
+                        <h5>Ryzeson Maravich</h5>
+                    </div>
+                    <div class="mt-2">
+                        <h6>&copy; 2023 Ryzeson Maravich</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex justify-content-between align-items-center">
+                    <a href="https://www.linkedin.com/in/ryzeson-maravich/" target="_blank" class="text-white"><i
+                            class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/Ryzeson" target="_blank" class="text-white"><i
+                            class="fab fa-github fa-lg"></i></a>
+                    <!-- <a href="" target="_blank" class="text-white mr-3"><i -->
+                    <!-- class="fab fa-twitter fa-lg"></i></a> -->
+                    <a href="https://www.instagram.com/ryzeson/" target="_blank" class="text-white"><i
+                            class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.goodreads.com/user/show/164978679-ryzeson" target="_blank"
+                        class="text-white"><i class="fab fa-goodreads fa-lg"></i></a>
+                    <a href="https://en.wikipedia.org/wiki/User:Ryzcheese" target="_blank" class="text-white"><i
+                            class="fab fa-wikipedia-w fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- JQuery, Popper.js (used for tooltips / popovers), Bootstrap, and custom JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

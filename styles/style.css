@@ -1,0 +1,122 @@
+.jumbotron {
+    text-align: center;
+}
+
+section .row {
+    height: 550px;
+    padding-bottom: 4%;
+    /* height: auto; */
+}
+
+#highlights .row {
+    height: auto;
+    padding-bottom: 2%;
+}
+
+#portfolio .row {
+    height: auto;
+    padding-bottom: 2%;
+}
+
+/* #portfolio i {
+    color: gray;
+}
+
+#portfolio img {
+    opacity: 50%; // Imitaates 'color: gray;' as these are all black and white images
+} */
+
+#portfolio p {
+    margin: 0;
+}
+
+#portfolio .proj_actions a {
+    color: black;
+    text-decoration: underline;
+}
+
+#portfolio .proj_actions a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Moves nav bar elements to the right */
+.navbar-nav {
+    margin-left: auto;
+    border: 2px solid white;
+}
+
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.card-bottom {
+    background-color: lightgray;
+}
+
+.btn-primary {
+    background-color: #2E2F2E;
+    border-color: #2E2F2E;
+}
+
+.btn-code {
+    color: white;
+    background-color: #727572;
+}
+
+.btn-code:hover {
+    background-color: #93B1F7;
+    /* Slightly darker color on hover */
+    border-color: #93B1F7;
+}
+
+h4 {
+    font-size: 1.6em;
+    font-weight: normal;
+    color: rgb(93, 88, 88);
+}
+
+#copy-right {
+    font-size: .8em;
+    font-weight: normal;
+}
+
+div.break {
+    height: 3px;
+    width: 45%;
+    opacity: 50%;
+    background-color: gray;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+code {
+    color: black;
+}
+
+div.credits {
+    background-color: #E9ECEF;
+}
+
+p.credits {
+    background-color: #E9ECEF;
+    margin: 0 0 0 10%;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator */
+a:target + h2 {
+    text-shadow: 0 0 10px rgba(249, 249, 54, 0.9); /* Set the glow effect */
+  }
+
+/* https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
