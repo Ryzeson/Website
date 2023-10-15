@@ -11,7 +11,7 @@ $(".modal").on('shown.bs.modal', function () {
     $('nav').attr('style', '');
 })
 
-// We highlight the section title (h2) after being taken here from index page
+// We highlight the section title (h2) after being taken there from the index page
 // This removes the highlight on page scroll 
 // https://stackoverflow.com/questions/6452960/window-scroll-firing-on-page-load
 $(document).ready(() => {
@@ -22,11 +22,3 @@ $(document).ready(() => {
         })
     }, 10);
 });
-
-
-// $(document).ready(function() {
-//     console.log( "ready!" );
-//     console.log($('#web-games').get());
-//     console.log($('.target').get());
-//     $('.target').attr('style', 'background-color: red;');
-// });
