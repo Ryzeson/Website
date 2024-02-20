@@ -39,12 +39,6 @@ section .row {
     text-decoration: underline;
 }
 
-/* Moves nav bar elements to the right */
-.navbar-nav {
-    margin-left: auto;
-    /* border: 2px solid white; */
-}
-
 .navbar-nav li:hover .dropdown-menu {
     display: block;
 }
@@ -79,7 +73,7 @@ h4 {
     color: rgb(93, 88, 88);
 }
 
-#copy-right {
+#copyright {
     font-size: .8em;
     font-weight: normal;
 }
