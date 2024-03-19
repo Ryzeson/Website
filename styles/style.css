@@ -47,6 +47,14 @@ section .row {
     font-size: 2em;
 }
 
+.card {
+    transition: box-shadow .5s;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .card-bottom {
     background-color: lightgray;
 }
